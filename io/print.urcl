@@ -1,0 +1,15 @@
+// Filename: print.urcl
+@FUNC println
+@SIGNATURE void string
+LLOD R2 R1 1
+.println
+LOD R3 R2
+INC R2 R2
+BRZ .zero R3
+OUT %TEXT R2
+JMP .println
+.zero
+OUT %TEXT '\n'
+@RETURN
+@END
+

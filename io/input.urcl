@@ -1,0 +1,13 @@
+//Filename: input.urcl
+@FUNC input
+@SIGNATURE string string
+LLOD R3 R1 1
+.input
+IN R2 %TEXT
+BRZ .zero R2
+STR R3 R2
+INC R3 R3
+JMP .getin
+.zero
+@RETURN
+@END
