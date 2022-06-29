@@ -1,6 +1,6 @@
 //Filename: input.urcl
 @FUNC input
-@SIGNATURE string string
+@SIGNATURE void string
 LLOD R3 R1 1
 .input
 IN R2 %TEXT
