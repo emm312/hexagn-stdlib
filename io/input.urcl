@@ -7,7 +7,6 @@ IN R2 %TEXT
 BRZ .zero R2
 STR R3 R2
 INC R3 R3
-JMP .getin
+JMP .input
 .zero
-@RETURN
 @END
