@@ -1,12 +1,11 @@
-//Filename: input.urcl
 @FUNC input
 @SIGNATURE void string
 LLOD R3 R1 1
-.input
+.input_loop
 IN R2 %TEXT
-BRZ .zero R2
+BRZ .input_end R2
 STR R3 R2
 INC R3 R3
-JMP .input
-.zero
+JMP .input_loop
+.input_end
 @END
