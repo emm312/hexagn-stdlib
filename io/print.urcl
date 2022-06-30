@@ -1,11 +1,11 @@
 @FUNC println
 @SIGNATURE void string
-LLOD R2 R1 1
+LLOD R2 R1 2
 .println_loop
 LOD R3 R2
 INC R2 R2
 BRZ .println_end R3
-OUT %TEXT R2
+OUT %TEXT R3
 JMP .println_loop
 .println_end
 OUT %TEXT '\n'

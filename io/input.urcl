@@ -1,6 +1,6 @@
 @FUNC input
 @SIGNATURE void string
-LLOD R3 R1 1
+LLOD R3 R1 2
 .input_loop
 IN R2 %TEXT
 BRZ .input_end R2
