@@ -1,0 +1,11 @@
+@FUNC setpixel
+@SIGNATURE void int int int
+// FIRST 2 are X and Y
+// LAST is the color
+LLOD R2 R1 2
+OUT %X R2
+LLOD R2 R1 3
+OUT %Y R2
+LLOD R2 R1 4
+OUT %COLOR R2
+@END

@@ -1,0 +1,10 @@
+@FUNC readcolour
+@SIGNATURE int8 int int
+LLOD R2 R1 2
+IN R2 %X
+LLOD R2 R1 3
+IN R2 %Y
+IN R2 %COLOR
+PSH R2
+@RETURN R2
+@END
