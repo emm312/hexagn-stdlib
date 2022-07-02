@@ -1,7 +1,5 @@
 @FUNC setpixel
-@SIGNATURE void int int int
-// FIRST 2 are X and Y
-// LAST is the color
+@SIGNATURE void int16 int16 int32
 LLOD R2 R1 2
 OUT %X R2
 LLOD R2 R1 3
