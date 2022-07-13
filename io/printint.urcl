@@ -1,6 +1,0 @@
-@FUNC printint
-@SIGNATURE void int32
-LLOD R2 R1 2
-OUT %UINT R2
-OUT %TEXT '\n'
-@END

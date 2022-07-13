@@ -1,8 +1,0 @@
-@FUNC getpixel
-@SIGNATURE int32 int32 int32
-LLOD R2 R1 2
-OUT %X R2
-LLOD R2 R1 3
-OUT %Y R2
-IN R2 %COLOR
-@END
