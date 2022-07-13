@@ -1,5 +1,5 @@
-@FUNC readcolour
-@SIGNATURE int32 int16 int16
+@FUNC getpixel
+@SIGNATURE int32 int32 int32
 LLOD R2 R1 2
 OUT %X R2
 LLOD R2 R1 3
