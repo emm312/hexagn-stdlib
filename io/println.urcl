@@ -15,12 +15,12 @@ OUT %TEXT '\n'
 @SIGNATURE void int32
 LLOD R2 R1 2
 OUT %INT R2
-OUT	%TEXT '\n'
+OUT %TEXT '\n'
 @END
 
 @FUNC println
 @SIGNATURE void uint32
 LLOD R2 R1 2
 OUT %UINT R2
-OUT	%TEXT '\n'
+OUT %TEXT '\n'
 @END
