@@ -13,7 +13,7 @@ JMP .input_loop
 @FUNC input
 @SIGNATURE void int32
 PSH .input_int32_str
-@CALL println void string
+@CALL println string
 
 // Result number
 IMM R3 0
