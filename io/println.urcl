@@ -1,4 +1,4 @@
-@FUNC print
+@FUNC println
 @SIGNATURE void string
 LLOD R2 R1 2
 .println_loop
@@ -8,4 +8,5 @@ BRZ .println_end R3
 OUT %TEXT R3
 JMP .println_loop
 .println_end
+OUT %TEXT '\n'
 @END
