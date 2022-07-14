@@ -1,0 +1,80 @@
+import io:println.urcl;
+import io.graphics:pixel.urcl;
+import util.math;
+
+void drawLine(int16 x1, int16 y1, int16 x2, int16 y2)
+{
+	int16 X = x1;
+	int16 Y = y1;
+
+	int16 temp = 0;
+
+	// dx = abs(x2 - x1)
+	int16 dx = 0;
+	temp = x2 - x1;
+	abs(temp);
+	urcl "POP R0";
+	urcl "PSH R2";
+
+	// dy = abs(y2 - y1)
+	int16 dy = 0;
+	temp = y2 - y1;
+	abs(temp);
+	urcl "POP R0";
+	urcl "PSH R2";
+
+	// s1 = sign(x2 - x1)
+	int8 s1 = 0;
+	temp = x2 - x1;
+	sign(temp);
+	urcl "POP R0";
+	urcl "PSH R2";
+
+	// s2 = sign(y2 - y1)
+	int8 s2 = 0;
+	temp = y2 - y1;
+	sign(temp);
+	urcl "POP R0";
+	urcl "PSH R2";
+
+	int8 interchange = 0;
+	if (dy > dx) {
+		interchange = 1;
+	}
+
+	int16 E = 2 * dy - dx;
+	int16 A = 2 * dy;
+	int16 B = 2 * dy - 2 * dx;
+
+	setpixel(x1, y1, 1);
+
+	int32 i = 1;
+	while (i < dx)
+	{
+		if (E < 0)
+		{
+			if (interchange == 1)
+			{
+				Y = Y + s2;
+			}
+			if (interchange == 0)
+			{
+				X = X + s1;
+			}
+
+			E = E + A;
+		}
+		if (E >= 0)
+		{
+			Y = Y + s2;
+			X = X + s1;
+			E = E + B;
+		}
+
+		setpixel(X, Y, 1);
+		println(X);
+		println(Y);
+
+		i = i + 1;
+	}
+}
