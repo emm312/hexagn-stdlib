@@ -1,0 +1,14 @@
+@FUNC getmousex
+@SIGNATURE int32
+IN R2 %MOUSE_X
+@END
+
+@FUNC getmousey
+@SIGNATURE int32
+IN R2 %MOUSE_Y
+@END
+
+@FUNC getmousebuttons
+@SIGNATURE int32
+IN R2 %MOUSE_BUTTONS
+@END
